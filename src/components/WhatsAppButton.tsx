@@ -8,11 +8,10 @@ export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
-  const whatsappNumber = "5511999999999";
   const message = encodeURIComponent(
     "Olá! Gostaria de saber mais sobre os planos da CrossFit889."
   );
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+  const whatsappUrl = `https://wa.me/5577999908265?text=${message}`;
 
   useEffect(() => {
     const updateVisibility = () => {
