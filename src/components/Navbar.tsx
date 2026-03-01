@@ -93,7 +93,7 @@ export default function Navbar() {
 
       <div
         className={cn(
-          "fixed inset-0 z-40 bg-cf-darker/98 backdrop-blur-lg transition-all duration-500 lg:hidden flex flex-col items-center justify-center",
+          "fixed inset-0 z-55 bg-cf-dark/98 backdrop-blur-lg transition-all duration-500 lg:hidden flex flex-col items-center justify-center",
           isMobileMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
