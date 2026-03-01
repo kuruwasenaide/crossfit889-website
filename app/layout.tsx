@@ -19,8 +19,31 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "CrossFit889 - Transforme Seu Corpo e Sua Mente",
   description:
-    "CrossFit889: a academia que vai transformar seu corpo e sua mente. Aulas de CrossFit, musculação, e treinos funcionais. Agende sua aula experimental gratuita.",
-};
+    "CrossFit889: a academia que vai transformar seu corpo e sua mente. Aulas de CrossFit, musculação, Hyrox e treinos funcionais. Agende sua aula experimental gratuita.",
+    openGraph: {
+      title: "CrossFit889",
+      description: "O 2° Melhor do Mundo.",
+      url: "https://crossfit889.com.br",
+      siteName: "CrossFit889",
+      images: [
+        {
+          url: "/banner.png",
+          width: 1280,
+          height: 1080,
+          alt: "Banner",
+        },
+      ],
+      locale: "pt_BR",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "CrossFit889",
+      description: "O 2° Melhor do Mundo.",
+      images: ["/banner.png"],
+    },
+  };
+
 
 export default function RootLayout({
   children,
@@ -61,7 +84,6 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* Schema.org structured data */}
         <Script
           id="schema-org"
           type="application/ld+json"
