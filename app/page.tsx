@@ -2,6 +2,7 @@
 
 import BackToTop from "@/components/BackToTop";
 import Footer from "@/components/Footer";
+import LoadingScreen from "@/components/LoadingScreen";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Navbar from "@/components/Navbar";
 import AboutSection from "@/components/sections/AboutSection";
@@ -16,6 +17,7 @@ import TestimonialsSection from "@/components/sections/TestimonialsSection";
 export default function Home() {
   return (
     <div className="min-h-screen bg-cf-darker">
+      <LoadingScreen />
       <Navbar />
       <main>
         <HeroSection />
