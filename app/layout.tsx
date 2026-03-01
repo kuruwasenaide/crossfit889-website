@@ -19,10 +19,10 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "CrossFit889 - Transforme Seu Corpo e Sua Mente",
   description:
-    "CrossFit889: a academia que vai transformar seu corpo e sua mente. Aulas de CrossFit, musculação, Hyrox e treinos funcionais. Agende sua aula experimental gratuita.",
+    "Transforme seu corpo e sua mente na CrossFit889. Aulas de CrossFit, musculação, Hyrox e treinos funcionais. Agende sua aula experimental gratuita.",
     openGraph: {
       title: "CrossFit889",
-      description: "O 2° Melhor do Mundo.",
+      description: "Transforme seu corpo e sua mente na CrossFit889. Aulas de CrossFit, musculação, Hyrox e treinos funcionais. Agende sua aula experimental gratuita.",
       url: "https://crossfit889.com.br",
       siteName: "CrossFit889",
       images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     twitter: {
       card: "summary_large_image",
       title: "CrossFit889",
-      description: "O 2° Melhor do Mundo.",
+      description: "Transforme seu corpo e sua mente na CrossFit889. Aulas de CrossFit, musculação, Hyrox e treinos funcionais. Agende sua aula experimental gratuita.",
       images: ["/banner.png"],
     },
   };
