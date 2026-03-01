@@ -1,6 +1,39 @@
+"use client";
+
 import AnimatedSection from "@/components/AnimatedSection";
-import CTAButton from "@/components/CTAButton";
+import { useCountUp, useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Award, Heart, History } from "lucide-react";
+
+const ABOUT_STATS = [
+  { value: 7, suffix: "+", label: "Anos de Experiência" },
+  { value: 100, suffix: "+", label: "Alunos Satisfeitos" },
+  { value: 60, suffix: "+", label: "Aulas por Semana" },
+];
+
+function StatCounter({
+  value,
+  suffix,
+  label,
+  isVisible,
+}: {
+  value: number;
+  suffix: string;
+  label: string;
+  isVisible: boolean;
+}) {
+  const count = useCountUp(value, 2000, isVisible);
+  return (
+    <div>
+      <div className="font-display font-bold text-3xl md:text-4xl text-cf-dark">
+        {count}
+        <span className="text-cf-dark">{suffix}</span>
+      </div>
+      <div className="text-gray-500 text-xs md:text-sm mt-1 uppercase tracking-wider">
+        {label}
+      </div>
+    </div>
+  );
+}
 
 const INFO_CARDS = [
   {
@@ -24,6 +57,8 @@ const INFO_CARDS = [
 ];
 
 export default function AboutSection() {
+  const { ref: statsRef, isVisible: statsVisible } = useScrollAnimation({ threshold: 0.2 });
+
   return (
     <section id="sobre" className="bg-[#f5f5f5] py-20 md:py-28 relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.03]">
@@ -64,10 +99,16 @@ export default function AboutSection() {
                 pessoa, independente do nível de condicionamento pode evoluir, superar limites
                 e alcançar resultados extraordinários.
               </p>
-              <div>
-                <CTAButton href="#aulas" variant="primary" size="md">
-                  Saiba Mais Sobre Nós
-                </CTAButton>
+              <div ref={statsRef} className="grid grid-cols-3 gap-6 md:gap-8">
+                {ABOUT_STATS.map((stat) => (
+                  <StatCounter
+                    key={stat.label}
+                    value={stat.value}
+                    suffix={stat.suffix}
+                    label={stat.label}
+                    isVisible={statsVisible}
+                  />
+                ))}
               </div>
             </div>
           </AnimatedSection>

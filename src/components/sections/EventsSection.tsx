@@ -39,7 +39,7 @@ const EVENTS = [
   },
 ];
 
-export default function ClassesSection() {
+export default function EventsSection() {
   return (
     <section id="eventos" className="bg-[#f5f5f5] py-20 md:py-28 relative">
       <div className="container">

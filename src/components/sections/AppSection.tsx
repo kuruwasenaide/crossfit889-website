@@ -6,7 +6,7 @@ import CTAButton from "@/components/CTAButton";
 import Image from "next/image";
 import { Parallax, useParallaxController } from "react-scroll-parallax";
 
-export default function ArticlesSection() {
+export default function AppSection() {
   const parallaxController = useParallaxController();
 
   return (

@@ -96,7 +96,7 @@ export default function PlansSection() {
   const [showAll, setShowAll] = useState(false);
 
   return (
-    <section id="planos" className="bg-[#f5f5f5] pt-20 md:pt-28 relative">
+    <section id="planos" className="bg-[#f5f5f5] py-20 md:py-28 relative">
       <div className="container">
         <AnimatedSection>
           <SectionHeading
@@ -161,7 +161,7 @@ export default function PlansSection() {
                       </div>
                     </div>
                     <a
-                      href={`https://wa.me/5577999908265?text=${encodeURIComponent("Olá! Gostaria assinar o " + plan.name)}`}
+                      href={`https://wa.me/5577999908265?text=${encodeURIComponent("Olá! Gostaria de saber mais sobre o " + plan.name)}.`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className='
@@ -240,7 +240,7 @@ export default function PlansSection() {
                             </div>
                           </div>
                           <a
-                            href={`https://wa.me/5577999908265?text=${encodeURIComponent("Olá! Gostaria assinar o " + plan.name)}`}
+                            href={`https://wa.me/5577999908265?text=${encodeURIComponent("Olá! Gostaria saber mais sobre o " + plan.name)}.`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className='

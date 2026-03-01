@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Navbar from "@/components/Navbar";
 import AboutSection from "@/components/sections/AboutSection";
-import ArticlesSection from "@/components/sections/ArticlesSection";
-import ClassesSection from "@/components/sections/ClassesSection";
+import AppSection from "@/components/sections/AppSection";
+import EventsSection from "@/components/sections/EventsSection";
 import CTASection from "@/components/sections/CTASection";
 import HeroSection from "@/components/sections/HeroSection";
 import PartnersSection from "@/components/sections/PartnersSection";
@@ -21,9 +21,8 @@ export default function Home() {
         <HeroSection />
         <PartnersSection />
         <AboutSection />
-        <ArticlesSection />
+        <AppSection />
         <PlansSection />
-        <ClassesSection />
         <TestimonialsSection />
         <CTASection />
       </main>

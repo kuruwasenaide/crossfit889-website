@@ -11,7 +11,7 @@ const NAV_LINKS = [
   { label: "App", href: "#app" },
   { label: "Planos", href: "#planos" },
   // { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Eventos", href: "#eventos" },
+  // { label: "Eventos", href: "#eventos" },
   { label: "Loja", href: "#loja" }
 ];
 
