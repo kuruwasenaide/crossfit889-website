@@ -49,7 +49,7 @@ export default function Navbar() {
         )}
       >
         <div className="container flex items-center justify-between">
-          <a href="#hero" className="flex items-center gap-2 group">
+          <a href="#" className="flex items-center gap-2 group">
             <div className="relative w-auto">
               <Image
                 src="/logo.png"
@@ -76,7 +76,7 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-4">
             <CTAButton href="#planos" size="sm">
-              Seja Membro
+              Seja Aluno
             </CTAButton>
           </div>
 

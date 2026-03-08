@@ -29,7 +29,7 @@ export default function Home() {
         <CTASection />
       </main>
       <Footer />
-      <WhatsAppButton />
+      {/* <WhatsAppButton /> */}
       <BackToTop />
     </div>
   );
